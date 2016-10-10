@@ -4,13 +4,21 @@
 # for each textfile type (currently only classes for txt and html).
 
 
-class ProcessText():
+class ProcessText:
 
     def __init__(self):
-        word_dictionary = {}
+        self.word_dictionary = {}
 
     def add_to_dict(self):
         pass
 
     def strip_parse_line(self):
         pass
+
+
+class ProcessPlainTxt(ProcessText):
+    pass
+
+
+class ProcessHTML(ProcessText):
+    pass
