@@ -21,16 +21,15 @@ The JSON string is in the format:
 }
 ```
 
-(Please note that this thing is not quite as usable as you might like. There are
-loads of special cases which are probably not covered in this program. And some
-things might not work the way you want it to.
+(Please note that this program might not work the way you think a word counter should
+work. There are special cases which are probably not covered in this program.
 
 For example: any word with an apostrophe s (like "Fred's") is counted as the base 
 word (i.e. it is considered as "Fred") whereas different forms of the same word
 (like "fly", "flying", "flew") count as different words.
 
-There are other programs that do this job better and cover more file types so you're
-better off using those.)
+There might be other programs that do this job better and cover more file types so 
+try to find which might work best for you.)
 
 How To Use
 ----------
