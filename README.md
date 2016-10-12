@@ -37,17 +37,13 @@ How To Use
 ----------
 
 1. Clone the repository and cd into the directory
-
 ```bash
 $ git clone https://github.com/dragsubil/word-counter
 $ cd word-counter
 ```
-
 2. Execute run.py
-
 ```bash
 $ python3 run.py <input file> <output file>
-```
 
 3. Open your output file
 
