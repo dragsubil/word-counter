@@ -1,1 +1,9 @@
 activate
+tests/__pycache__
+tests/*.json
+*.json
+__pycache__
+*.swp
+*.swo
+tests/*.swp
+tests/*.swo
