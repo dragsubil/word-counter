@@ -14,11 +14,10 @@ The JSON string is in the format:
     "File type": "file",
     "Total Words": 1337,
     "Word Counts": {
-    	"each": 100,
-	"word": 200,
-	"count": 300,
-	...
-    }
+        "each": 100,
+        "word": 200,
+        "count": 300,
+        }
 }
 ```
 
@@ -36,16 +35,16 @@ better off using those.)
 How To Use
 ----------
 
-1. Clone the repository and cd into the directory
+* Clone the repository and cd into the directory
 ```bash
 $ git clone https://github.com/dragsubil/word-counter
 $ cd word-counter
 ```
-2. Execute run.py
+* Execute run.py
 ```bash
 $ python3 run.py <input file> <output file>
-
-3. Open your output file
+```
+* Open your output file
 
 
 License
