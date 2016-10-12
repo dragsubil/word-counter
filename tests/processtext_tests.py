@@ -7,10 +7,11 @@ import unittest
 import processtext
 from pprint import pprint
 
+
 class processtextTests(unittest.TestCase):
 
     def setUp(self):
-        self.test_file = open("loren.txt", "r+", encoding="UTF-8")
+        self.test_file = open("aliceinwonderland.txt", "r+", encoding="UTF-8")
         self.processtext_obj = processtext.ProcessText(self.test_file)
         self.processtext_obj.file_object.seek(0)
 
@@ -29,6 +30,24 @@ class processtextTests(unittest.TestCase):
 
     def tearDown(self):
         self.test_file.close()
+
+
+class ProcessHTMLTests(unittest.TestCase):
+
+    def setUp(self):
+        self.test_file = open("worm.html", "r+", encoding="UTF-8")
+        self.processtext_obj = processtext.ProcessHTML(self.test_file)
+        self.processtext_obj.file_object.seek(0)
+
+    def test_get_dict(self):
+        self.assertIsInstance(self.processtext_obj.get_dict(), dict)
+
+    def test_remove_html_stuff(self):
+        '''I don't know what I should test here. Hell! I'm not even sure if
+        I'm testing everything else properly.
+        '''
+        pass
+
 
 if __name__ == '__main__':
     unittest.main()

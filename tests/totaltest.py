@@ -5,10 +5,13 @@
 import wordcounter
 
 
-def writetofile():
-    wordcount_obj = wordcounter.WordCount("mobydick.txt")
+
+def writetofile(filename, op_file):
+    wordcount_obj = wordcounter.WordCount(filename)
     pretty_dict = wordcount_obj.get_result()
-    with open("log.txt", "w+") as file1:
+    with open(op_file, "w+") as file1:
         file1.write(pretty_dict)
 
-writetofile()
+
+writetofile("aliceinwonderland.txt", "alice.json")
+writetofile("worm.html", "worm.json")
