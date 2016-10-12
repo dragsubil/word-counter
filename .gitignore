@@ -1,9 +1,11 @@
 activate
-tests/__pycache__
+tests/__pycache__/
 tests/*.json
 *.json
-__pycache__
+__pycache__/
 *.swp
 *.swo
 tests/*.swp
 tests/*.swo
+*.html
+*.txt
